@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JD JP | Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated canvas background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Fixed Navbar -->
+  <header id="navbar">
+    <h1 class="logo">Jeyadev Jayaprakash</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section id="intro" class="section fade">
+    <div class="intro-content">
+      <img src="images/headshot.jpg" alt="Headshot" class="headshot" />
+      <div class="intro-text">
+        <h1>Jeyadev Jayaprakash</h1>
+        <p>Biomedical Engineering Student at UNC Chapel Hill</p>
+        <button id="learnMore">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- About Section -->
+  <section id="about" class="section fade">
+    <h2>About Me</h2>
+    <div class="about-layout">
+      <p> <br />
+        I’m passionate about bioengineering research — refining neural electrode arrays and mapping neuron networks.
+        My goal is to advance the tools that help us understand and interface with the brain’s complex systems.
+      </p>
+      <img src="images/research.jpg" alt="Research Image" class="about-img" />
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section fade">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" data-project="1">
+        <h3>Project1</h3>
+        <p>Project1Description</p>
+      </div>
+      <div class="project-card" data-project="2">
+        <h3>Project2</h3>
+        <p>Project1Description</p>
+      </div>
+      <div class="project-card" data-project="3">
+        <h3>Project3</h3>
+        <p>Project1Description</p>
+      </div>
+    </div>
+
+    <!-- Expanded Project Info Container -->
+    <div id="projectDetail" class="project-detail hidden">
+      <h3 id="projectTitle"></h3>
+      <p id="projectDescription"></p>
+      <a id="projectLink" href="#" target="_blank">View Project →</a>
+      <button id="closeProject">Close</button>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade">
+    <h2>Contact Me</h2>
+    <p>You're welcome to reach out through any of my socials!</p>
+    <table class="contact-table">
+      <tr>
+        <td>📧 Email:</td>
+        <td><a href="mailto:jeyadevjp@gmail.com">jeyadevjp@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td>📞 Phone:</td>
+        <td><a href="tel:+_______">+_______</a></td>
+      </tr>
+      <tr>
+        <td>🔗 LinkedIn:</td>
+        <td><a href="https://linkedin.com/in/_____" target="_blank">linkedin.com/in/_____</a></td>
+      </tr>
+      <tr>
+        <td>💻 GitHub:</td>
+        <td><a href="https://github.com/_____" target="_blank">github.com/____</a></td>
+      </tr>
+      <tr>
+        <td>🐦 Twitter:</td>
+        <td><a href="https://twitter.com/____" target="_blank">@____</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Jeyadev Jayaprakash | Personal Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
