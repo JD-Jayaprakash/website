@@ -1,6 +1,4 @@
-/* ======================================
-   Animated Particle Background
-   ====================================== */
+/* Animated particle background */
 const canvas = document.getElementById("bgCanvas");
 const ctx = canvas.getContext("2d");
 let width, height, particles;
@@ -39,16 +37,16 @@ function animate() {
   });
   requestAnimationFrame(animate);
 }
+
 resize();
 animate();
 
-/* ======================================
-   Smooth Scrolling + Section Highlight
-   ====================================== */
+/* Smooth "Learn More" scroll */
 document.getElementById("learnMore").addEventListener("click", () => {
   document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
 });
 
+/* Highlight navbar item based on scroll position */
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -65,9 +63,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* ======================================
-   Background Style Shift by Section
-   ====================================== */
+/* Background color shifting */
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const body = document.body;
@@ -83,55 +79,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/* ======================================
-   Project Expansion on Click
-   ====================================== */
-const projectData = {
-  1: {
-    title: "Project1",
-    description:
-      "Project1JSDescription",
-    link: "https://github.com/____",
-  },
-  2: {
-    title: "BioSignal Analyzer",
-    description:
-      "Project2JSDescription",
-    link: "https://github.com/____",
-  },
-  3: {
-    title: "Cas9 Gene Editor",
-    description:
-      "Project3JSDescription",
-    link: "https://github.com/____",
-  },
-};
-
-const projectCards = document.querySelectorAll(".project-card");
-const projectDetail = document.getElementById("projectDetail");
-const projectTitle = document.getElementById("projectTitle");
-const projectDescription = document.getElementById("projectDescription");
-const projectLink = document.getElementById("projectLink");
-const closeProject = document.getElementById("closeProject");
-
-projectCards.forEach((card) => {
-  card.addEventListener("click", () => {
-    const id = card.dataset.project;
-    const data = projectData[id];
-    projectTitle.textContent = data.title;
-    projectDescription.textContent = data.description;
-    projectLink.href = data.link;
-    projectDetail.classList.remove("hidden");
-  });
-});
-
-closeProject.addEventListener("click", () => {
-  projectDetail.classList.add("hidden");
-});
-
-/* ======================================
-   Fade-in Observer Animation
-   ====================================== */
+/* Fade-in scroll animations */
 const faders = document.querySelectorAll(".fade");
 const appearOptions = { threshold: 0.25 };
 const appearOnScroll = new IntersectionObserver(function (entries, observer) {
