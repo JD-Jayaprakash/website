@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Animated canvas background -->
+  <!--Animated canvas background -->
   <canvas id="bgCanvas"></canvas>
 
   <!-- Fixed Navbar -->
@@ -17,7 +17,7 @@
       <ul>
         <li><a href="#intro" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -26,7 +26,7 @@
   <!-- Intro Section -->
   <section id="intro" class="section fade">
     <div class="intro-content">
-      <img src="images/headshot.jpg" alt="Headshot" class="headshot" />
+      <img src="IMG_1937.JPG" alt="Headshot" class="headshot" />
       <div class="intro-text">
         <h1>Jeyadev Jayaprakash</h1>
         <p>Biomedical Engineering Student at UNC Chapel Hill</p>
@@ -41,40 +41,32 @@
   <section id="about" class="section fade">
     <h2>About Me</h2>
     <div class="about-layout">
-      <p> <br />
+      <p><br />
         I’m passionate about bioengineering research — refining neural electrode arrays and mapping neuron networks.
         My goal is to advance the tools that help us understand and interface with the brain’s complex systems.
       </p>
-      <img src="images/research.jpg" alt="Research Image" class="about-img" />
+      <!-- <img src="images/research.jpg" alt="Research Image" class="about-img" /> -->
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section fade">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card" data-project="1">
-        <h3>Project1</h3>
-        <p>Project1Description</p>
-      </div>
-      <div class="project-card" data-project="2">
-        <h3>Project2</h3>
-        <p>Project1Description</p>
-      </div>
-      <div class="project-card" data-project="3">
-        <h3>Project3</h3>
-        <p>Project1Description</p>
-      </div>
-    </div>
+  <!-- Resume Section (Replaces Projects Section) -->
+  <section id="resume" class="section fade">
+    <h2>Resume</h2>
 
-    <!-- Expanded Project Info Container -->
-    <div id="projectDetail" class="project-detail hidden">
-      <h3 id="projectTitle"></h3>
-      <p id="projectDescription"></p>
-      <a id="projectLink" href="#" target="_blank">View Project →</a>
-      <button id="closeProject">Close</button>
+    <div class="resume-container">
+      <!-- PDF Preview -->
+      <iframe 
+        src="JD_Resume.pdf"
+        class="resume-preview"
+        title="Resume PDF Preview">
+      </iframe>
+
+      <!-- Download Button -->
+      <a href="JD_Resume.pdf" download class="resume-download-btn">
+        Download Full Resume
+      </a>
     </div>
   </section>
 
@@ -91,19 +83,15 @@
       </tr>
       <tr>
         <td>📞 Phone:</td>
-        <td><a href="tel:+_______">+_______</a></td>
+        <td><a href="tel:+1(919)916-0308">+1(919)916-0308</a></td>
       </tr>
       <tr>
         <td>🔗 LinkedIn:</td>
-        <td><a href="https://linkedin.com/in/_____" target="_blank">linkedin.com/in/_____</a></td>
+        <td><a href="https://www.linkedin.com/in/jeyadev-jayaprakash-948938224/" target="_blank">https://www.linkedin.com/in/jeyadev-jayaprakash-948938224/</a></td>
       </tr>
       <tr>
         <td>💻 GitHub:</td>
-        <td><a href="https://github.com/_____" target="_blank">github.com/____</a></td>
-      </tr>
-      <tr>
-        <td>🐦 Twitter:</td>
-        <td><a href="https://twitter.com/____" target="_blank">@____</a></td>
+        <td><a href="https://github.com/JD-Jayaprakash" target="_blank">https://github.com/JD-Jayaprakash</a></td>
       </tr>
     </table>
   </section>
