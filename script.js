@@ -42,7 +42,7 @@ resize();
 animate();
 
 /* Smooth "Learn More" scroll */
-document.getElementById("learnMore").addEventListener("click", () => {
+/* document.getElementById("learnMore").addEventListener("click", () => {
   document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
 });
 
