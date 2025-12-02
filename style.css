@@ -81,7 +81,9 @@ nav ul {
 .headshot {
   width: 40%;
   height: 40%;
-  object-fit: fill;
+  object-fit: cover;
+  object-view-box: inset(30%);
+  object-position: -55px 20px;
   border-radius: 50%;
   margin-bottom: 25px;
   border: 2px solid #3b82f6;
